@@ -12,10 +12,32 @@ interface IQueue<T> {
     enqueue(item: T): void;
     dequeue(): T | undefined;
     size(): number;
-  }
-class Queue<T> {
-    constructor(
-        private elemants: Record<number,T> = {},
-        private 
-    ){}
 }
+
+console.log("Sacasc")
+class Queue<T> implements IQueue<T>{
+    private storage: T[] = [];
+    constructor(private count: T) { }
+    enqueue(item: T) {
+        if (this.size() === this.count) {
+            throw new Error("Queue is Full");
+        }
+        return this.storage.push(item)
+    }
+    dequeue() {
+        return this.storage.shift();
+    }
+    size() {
+        return this.storage.length
+    }
+
+}
+
+const queue = new Queue<string>("");
+
+queue.enqueue("A");
+queue.enqueue("B");
+const size = queue.size();    // Output: 2
+const dequeue = queue.dequeue(); // Output: "A"
+const size2 = queue.size();    // Output: 1
+console.log(size, dequeue, size2)
