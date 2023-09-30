@@ -1,5 +1,7 @@
 package array;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         Array numbers = new Array(3);
@@ -13,6 +15,15 @@ public class Main {
         numbers.print();
         System.out.println("***************");
         System.out.println(numbers.indexOf(400)); // -1
+        // **ARRAYLIST */
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(8);
+        list.add(80);
+        list.add(1008);
+        list.add(84);
+        list.remove(0);
+        System.out.println(list);
 
     }
 }
