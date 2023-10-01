@@ -3,8 +3,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        String b = new Solution().mergeAlternately("HIwe", "oby");
-        System.out.println(b);
+        // String b = new Solution().mergeAlternately("HIwe", "oby");
+        // System.out.println(b);
+        String gcdOfStrings = new gcdOfStrings().gString("ABABAB", "ABAB");
+        System.out.println(gcdOfStrings);
         Array numbers = new Array(3);
         numbers.insert(0);
         numbers.insert(10);
