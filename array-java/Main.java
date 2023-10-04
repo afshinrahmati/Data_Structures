@@ -11,9 +11,12 @@ public class Main {
         // String gcdOfStrings = new gcdOfStrings().gString("ABABAB", "ABAB");
         // System.out.println(gcdOfStrings);
         // **** THREE ****
-        int[] candies = {12,1,12};
-        List<Boolean> getKids = new Candies().KidsWithCandies(candies, 10);
-        System.out.println(getKids);
+        // int[] candies = {12,1,12};
+        // List<Boolean> getKids = new Candies().KidsWithCandies(candies, 10);
+        // System.out.println(getKids);
+        // *** FOUR ****
+        String s = new Volwels().reverseVowels("race car");
+        System.out.println(s);
         // *** ARRAY I CREATE ****
         // Array numbers = new Array(3);
         // numbers.insert(0);
