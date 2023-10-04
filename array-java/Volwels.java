@@ -1,33 +1,31 @@
-class Solution {
+class Volwels {
     public String reverseVowels(String s) {
-  
-     char[] word = s.toCharArray();
+
+        char[] chars = s.toCharArray();
         int start = 0;
-        int end = s.length() - 1;
-        String vowels = "aeiouAEIOU";
-        
+        int end = chars.length - 1;
+
         while (start < end) {
-            // Move start pointer until it points to a vowel
-            while (start < end && vowels.indexOf(word[start]) == -1) {
-                start++;
+            while (start < end && !isVowel(chars[start])) { // az aval inghadar miravad to hrof sedadar pyda konad
+                start++; //  vaghti pyda nakrd mirvad badi
             }
-            
-            // Move end pointer until it points to a vowel
-            while (start < end && vowels.indexOf(word[end]) == -1) {
-                end--;
+            while (start < end && !isVowel(chars[end])) { // ad akhar miyad ta hrof seda dar pyda kona
+                end--; // pyda nakrd miravad badi
             }
-            
-            // Swap the vowels
-            char temp = word[start];
-            word[start] = word[end];
-            word[end] = temp;
-            
-            // Move the pointers towards each other
+            char holdOldVal = chars[start];
+            chars[start] = chars[end];
+            chars[end] = holdOldVal;
             start++;
             end--;
+
         }
-        
-        String answer = new String(word);
-        return answer;
+
+        return String.valueOf(chars);
+
+    }
+
+    private boolean isVowel(char c) {
+        c = Character.toLowerCase(c);
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u';
     }
 }
