@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 class NumberMultiplication {
 
     public int[] productExceptSelf(int[] nums) {
@@ -12,9 +10,11 @@ class NumberMultiplication {
                 if (i == 0) {
                     operator = operator * nums[t];
                 }
+                // right
                 if (t < nums.length && i != 0) {
                     operator = operator * nums[t];
                 }
+                // left
                 if (y >= 0 && i != 0) {
                     operator = operator * nums[y];
                 }
