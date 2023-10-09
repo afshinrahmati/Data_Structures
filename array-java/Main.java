@@ -15,8 +15,12 @@ public class Main {
         // List<Boolean> getKids = new Candies().KidsWithCandies(candies, 10);
         // System.out.println(getKids);
         // *** FOUR ****
-        String s = new Volwels().reverseVowels("race car");
-        System.out.println(s);
+        // String s = new Volwels().reverseVowels("race car");
+        // System.out.println(s);
+        // ** FIVE ****
+        int[] numbers = {-1,1,0,-3,3};
+        int[] num = new NumberMultiplication().productExceptSelf(numbers);
+        System.out.println(num);
         // *** ARRAY I CREATE ****
         // Array numbers = new Array(3);
         // numbers.insert(0);
