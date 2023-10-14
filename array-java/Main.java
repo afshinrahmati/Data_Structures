@@ -18,9 +18,13 @@ public class Main {
         // String s = new Volwels().reverseVowels("race car");
         // System.out.println(s);
         // ** FIVE ****
-        int[] numbers = {-1,1,0,-3,3};
-        int[] num = new NumberMultiplication().productExceptSelf(numbers);
-        System.out.println(num);
+        // int[] numbers = {-1,1,0,-3,3};
+        // int[] num = new NumberMultiplication().productExceptSelf(numbers);
+        // System.out.println(num);
+        // *** SIX ****
+        int[] numbers = {2,4,-2,-3};
+        boolean triplet = new Triplet().increasingTriplet(numbers);
+        System.out.println(triplet );
         // *** ARRAY I CREATE ****
         // Array numbers = new Array(3);
         // numbers.insert(0);
