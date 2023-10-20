@@ -4,6 +4,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // *** SEVEN ***
+        int[] nums = { 0, 10, 3, 12, 0, 15 };
+        Void ss = new Zeroes().moveZeroes(nums);
         // **** ONE *****
         // String b = new Solution().mergeAlternately("HIwe", "oby");
         // System.out.println(b);
@@ -22,9 +25,10 @@ public class Main {
         // int[] num = new NumberMultiplication().productExceptSelf(numbers);
         // System.out.println(num);
         // *** SIX ****
-        int[] numbers = {2,4,-2,-3};
-        boolean triplet = new Triplet().increasingTriplet(numbers);
-        System.out.println(triplet );
+        // int[] numbers = {2,4,-2,-3};
+        // boolean triplet = new Triplet().increasingTriplet(numbers);
+        // System.out.println(triplet );
+
         // *** ARRAY I CREATE ****
         // Array numbers = new Array(3);
         // numbers.insert(0);
