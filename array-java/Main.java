@@ -4,9 +4,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // ***eghit ***
+        boolean s = new Subsequence().isSubsequence("aec", "abcde");
+        System.out.println(s);
         // *** SEVEN ***
-        int[] nums = { 0, 10, 3, 12, 0, 15 };
-        Void ss = new Zeroes().moveZeroes(nums);
+        // int[] nums = { 0, 10, 3, 12, 0, 15 };
+        // Void ss = new Zeroes().moveZeroes(nums);
         // **** ONE *****
         // String b = new Solution().mergeAlternately("HIwe", "oby");
         // System.out.println(b);
