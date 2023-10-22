@@ -4,9 +4,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        // *** nine ***
+        int[] nums = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        int num = new MaxArea().maxArea(nums);
         // ***eghit ***
-        boolean s = new Subsequence().isSubsequence("aec", "abcde");
-        System.out.println(s);
+        // boolean s = new Subsequence().isSubsequence("aec", "abcde");
+        // System.out.println(s);
         // *** SEVEN ***
         // int[] nums = { 0, 10, 3, 12, 0, 15 };
         // Void ss = new Zeroes().moveZeroes(nums);
