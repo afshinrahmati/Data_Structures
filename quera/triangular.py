@@ -1,10 +1,5 @@
 n = int(input())
 ans = 0
-for a in range(1,n):
-    for b in range(a,n):
-        c = n - a - b
-        if a+b > c and b <= c:
-            ans = ans +1
-
-
-print(ans)                
+for a in range(1,(n//3) + 1):
+    ans += (n - 3 * a) // 2 - max(0, n // 2 - 2 * a + 1) + 1
+print(ans)
