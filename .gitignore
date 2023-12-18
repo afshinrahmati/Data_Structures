@@ -2,3 +2,6 @@
 *.js
 *.class
 ._*
+yarn*
+.yarn*
+node_modules
